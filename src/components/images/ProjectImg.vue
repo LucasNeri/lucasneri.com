@@ -12,6 +12,7 @@
       classIcon: String,
       hrefProps: String,
       srcProps: String,
+      altProps: String
     }
   });
 </script>

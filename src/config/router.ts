@@ -29,6 +29,10 @@ router.beforeEach((to, from, next) => {
         store.commit('menu/setPath', to.path)
     }
 
+    if(to.path != '/'){
+        next('/')
+    }
+
     next()
 })
 

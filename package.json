@@ -10,6 +10,8 @@
   "dependencies": {
     "axios": "^0.27.2",
     "core-js": "^3.6.5",
+    "firebase": "^9.9.0",
+    "firebase-tools": "^11.2.2",
     "register-service-worker": "^1.7.1",
     "vee-validate": "^4.5.11",
     "vue": "^2.6.11",
@@ -45,4 +47,3 @@
     "vuetify-loader": "^1.7.0"
   }
 }
-

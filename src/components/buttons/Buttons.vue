@@ -16,6 +16,8 @@
             :color="$vuetify.theme.dark ? this.$vuetify.theme.themes.dark.btn : this.$vuetify.theme.themes.light.btn"
             large
             light
+            target="_blank"
+            href="https://wa.me/message/KZQKH2ALTZI7N1"
         > 
             <span :class="$vuetify.theme.dark ? 'text-btn-dark' : 'text-btn'">
             Contact me
