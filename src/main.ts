@@ -7,6 +7,7 @@ import vuetify from './plugins/vuetify'
 import DatetimePicker from 'vuetify-datetime-picker'
 import Vuelidate from 'vuelidate'
 import axios from 'axios'
+import i18n from './i18n';
 
 Vue.config.productionTip = false
 
@@ -28,5 +29,6 @@ new Vue({
   router,
   store,
   vuetify,
+  i18n,
   render: h => h(App)
 }).$mount('#app')

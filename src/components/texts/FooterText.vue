@@ -1,6 +1,19 @@
 <template>
     <div :class="classDivProps">
-        <p :class="$vuetify.theme.dark ? 'footer-text-dark' : 'footer-text'">
+        <div v-if="about">            
+            <p :class="$vuetify.theme.dark ? 'footer-text-dark' : 'footer-text'">
+                {{ text }}
+            </p>
+            <br>
+            <p :class="$vuetify.theme.dark ? 'footer-text-dark' : 'footer-text'">
+                {{ text2 }}
+            </p>
+            <br>
+            <p :class="$vuetify.theme.dark ? 'footer-text-dark' : 'footer-text'">
+                {{ text3 }}
+            </p>
+        </div>
+        <p :class="$vuetify.theme.dark ? 'footer-text-dark' : 'footer-text'" v-else>
             {{ text }}
         </p>
     </div>
@@ -13,6 +26,9 @@
     props: {
         classDivProps: String,
         text: String,
+        text2: String,
+        text3: String,
+        about: Boolean,
     }
     });
 </script>

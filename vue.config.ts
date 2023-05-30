@@ -28,6 +28,7 @@ module.exports = {
         '@views': path.resolve(__dirname, 'src/views'),
         '@store': path.resolve(__dirname, 'src/store'),
         '@util': path.resolve(__dirname, 'src/util'),  
+        '@locales': path.resolve(__dirname, 'src/locales'),  
       }
     }
   }

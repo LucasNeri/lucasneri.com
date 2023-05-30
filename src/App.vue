@@ -1,18 +1,24 @@
-<template class="asd">
+<template>
   <v-app>
-    <v-content>
+    <v-main>
       <v-container fluid class="container-app">
         <router-view></router-view>
       </v-container>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib'
+import pt from './locales/pt';
+import en from './locales/en';
 
 new Vuetify({
+  lang: {
+    locales: { pt, en },
+    current: 'en', // define o idioma padrão
+  },
   theme: {
     themes: {
       light: {

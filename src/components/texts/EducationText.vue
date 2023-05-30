@@ -42,7 +42,7 @@
         font-style: normal
         font-weight: 500
         font-size: 19px
-        line-height: 23px
+        line-height: 26px
         color: #3D3D3D 
         text-align: left
         margin-bottom: 0px

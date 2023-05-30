@@ -2,15 +2,15 @@
     <div class="facts">
         <FactText 
             numberProps="2+"
-            textProps="Years of work experience" 
+            :textProps="$t('years')"
         />
         <FactText 
             numberProps="10+"
-            textProps="Completed projects" 
+            :textProps="$t('projects')"
         />
         <FactText 
             numberProps="2"
-            textProps="Pojects open to the public" 
+            :textProps="$t('openSource')"
         />
     </div>
 </template>

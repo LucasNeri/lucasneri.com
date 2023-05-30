@@ -1,11 +1,12 @@
 <template>
     <div>
-        <HeaderAbout icon="mdi-account-school" title="Education" />
-        <EducationText text="Rocketseat - FrontEnd Developer Course (2021)" />
-        <EducationText text="Curso de JS e TS - Udemy, Web Development Course (2020)" />
-        <EducationText text="Aliança America - English School (2021+)" />
-        <EducationText text="Matemática - University of MG, Brasil (2019+)" />
-        <EducationText text="Colégio Tiradentes Da PMMG - High School (2017)" />
+        <HeaderAbout icon="mdi-account-school" :title="$t('education')" />
+        <EducationText :text="$t('undergraduate')" />
+        <EducationText :text="$t('bachelor')" />
+        <EducationText :text="$t('english')" />
+        <EducationText :text="$t('frontend')" />
+        <EducationText :text="$t('fullstack')" />
+        <EducationText :text="$t('highschool')" />
     </div>
 </template>
 

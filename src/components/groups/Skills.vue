@@ -1,6 +1,6 @@
 <template>
     <div class="mt-16">
-        <HeaderAbout icon="mdi-star" title="Main Skills" />
+        <HeaderAbout icon="mdi-star" :title="$t('main')" />
         <div class="text-center">
             <div class="skills-icon">
                 <SkillIcon srcProps="javascript.png" altProps="JS" />
@@ -9,16 +9,22 @@
                 <SkillIcon srcProps="python.png" altProps="PY" />
             </div>
             <div class="skills-icon">
+                <SkillIcon srcProps="react-native.png" altProps="React" />
+                <SkillIcon srcProps="native.png" altProps="ReactNative" />
                 <SkillIcon srcProps="vue-js.png" altProps="Vue" />
-                <SkillIcon srcProps="react-native.png" altProps="RS" />
                 <SkillIcon srcProps="nodejs.png" altProps="NODE" />
-                <SkillIcon srcProps="html.png" altProps="HTML" />
             </div>
             <div class="skills-icon">
                 <SkillIcon srcProps="css.png" altProps="CSS" />
+                <SkillIcon srcProps="html.png" altProps="HTML" />
                 <SkillIcon srcProps="mysql.png" altProps="MYSQL" />
                 <SkillIcon srcProps="mongodb.png" altProps="MONGO" />
+            </div>
+            <div class="skills-icon">
+                <SkillIcon srcProps="next.png" altProps="Next" />
                 <SkillIcon srcProps="docker.png" altProps="DOCKER" />
+                <SkillIcon srcProps="jest.png" altProps="Jest" />
+                <SkillIcon srcProps="aws.webp" altProps="Aws" />
             </div>
         </div>
     </div>

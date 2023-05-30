@@ -1,6 +1,6 @@
 <template>
     <p :class="$vuetify.theme.dark ? 'simple-text-dark' : 'simple-text'">
-        Software Engineer
+        {{ $t('profession') }}
     </p>
 </template>
 

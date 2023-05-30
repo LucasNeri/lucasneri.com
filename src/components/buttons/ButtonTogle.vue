@@ -11,7 +11,7 @@
           @click="showPortfolio()" 
           value="portfolioValue"
         >
-          <span :class="$vuetify.theme.dark ? 'text-btn-t-dark' : 'text-btn-t'">Portfolio</span>
+          <span :class="$vuetify.theme.dark ? 'text-btn-t-dark' : 'text-btn-t'"> {{ $t('portfolio') }}</span>
         </v-btn>
   
         <v-btn 
@@ -19,7 +19,7 @@
           @click="showSkills()" 
           value="skillsValue"
         >
-          <span :class="$vuetify.theme.dark ? 'text-btn-t-dark' : 'text-btn-t'">About</span>
+          <span :class="$vuetify.theme.dark ? 'text-btn-t-dark' : 'text-btn-t'">{{ $t('about') }}</span>
         </v-btn>
       </v-btn-toggle>
     </div>

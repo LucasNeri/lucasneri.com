@@ -1,6 +1,9 @@
 <template>
   <div>
-    <DarkModeBtn />
+    <div style='display: flex; justify-content: center;' >
+      <LangBtn />
+      <DarkModeBtn />
+    </div>
     <Profile />
     <Facts />
     <Buttons />
@@ -9,7 +12,7 @@
       <Projects v-if="portfolio"/>
       <About v-else/>
     </transition>
-    <FooterText classDivProps="mt-15 mx-auto mb-5" text="© Lucas Neri, 2022. All rights reserved."/>
+    <FooterText classDivProps="mt-15 mx-auto mb-5" :text="$t('rights')"/>
   </div>
 </template>
 
@@ -17,13 +20,14 @@
 import Vue from 'vue';
 import {mapState, mapMutations} from 'vuex';
 import DarkModeBtn from '@/components/buttons/DarkModeBtn.vue';
-import Profile from '../../components/groups/Profile.vue';
+import LangBtn from '@/components/buttons/LangBtn.vue';
+import Profile from '@/components/groups/Profile.vue';
 import Facts from '@/components/groups/Facts.vue';
-import Buttons from '../../components/buttons/Buttons.vue';
-import ButtonTogle from '../../components/buttons/ButtonTogle.vue';
-import Projects from '../../components/groups/Projects.vue';
+import Buttons from '@/components/buttons/Buttons.vue';
+import ButtonTogle from '@/components/buttons/ButtonTogle.vue';
+import Projects from '@/components/groups/Projects.vue';
 import FooterText from '@/components/texts/FooterText.vue';
-import About from '../../components/groups/About.vue';
+import About from '@/components/groups/About.vue';
 
 export default Vue.extend({
     name: "Home",
@@ -42,7 +46,7 @@ export default Vue.extend({
             "showSkills"
         ]),
     },
-    components: { DarkModeBtn, Profile, Facts, Buttons, ButtonTogle, Projects, FooterText, About }
+    components: { DarkModeBtn, LangBtn, Profile, Facts, Buttons, ButtonTogle, Projects, FooterText, About }
 });
 </script>
 

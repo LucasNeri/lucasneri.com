@@ -5,4 +5,5 @@ Vue.use(Vuetify)
 
 export default new Vuetify({
     theme: { dark: true },
+    lang: { current: 'en' }
 });

@@ -1,10 +1,10 @@
 <template>
     <div>
-        <HeaderAbout icon="mdi-domain" title="Work History" />   
+        <HeaderAbout icon="mdi-domain" :title="$t('workHistory')" />   
         <WorkText numberText="2022+" text="EstrelaBet"/>
         <WorkText numberText="2021-2022" text="SX company"/>
-        <WorkText numberText="2020+" text="Freelance Developer"/>
-        <WorkText numberText="2019-2020" text="Private Math Teacher"/>
+        <WorkText numberText="2020-2021" :text="$t('freelance')"/>
+        <WorkText numberText="2019-2020" :text="$t('privateTeacher')"/>
         <WorkText numberText="2018-2019" text="Localiza Hertz"/>
     </div>
 </template>

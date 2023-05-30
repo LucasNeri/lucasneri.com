@@ -5,9 +5,9 @@
             dark
             small
             @click="$vuetify.theme.dark = !$vuetify.theme.dark"
-            :color="$vuetify.theme.dark ? this.$vuetify.theme.themes.dark.back_button_dark_mode : this.$vuetify.theme.themes.light.back_button_dark_mode"
+            :color="$vuetify.theme.dark ? $vuetify.theme.themes.dark.back_button_dark_mode : $vuetify.theme.themes.light.back_button_dark_mode"
         >
-            <v-icon :color="$vuetify.theme.dark ? this.$vuetify.theme.themes.dark.icon_button_dark_mode : this.$vuetify.theme.themes.light.icon_button_dark_mode" small
+            <v-icon :color="$vuetify.theme.dark ? $vuetify.theme.themes.dark.icon_button_dark_mode : $vuetify.theme.themes.light.icon_button_dark_mode" small
             >
                 mdi-brightness-4
             </v-icon>
